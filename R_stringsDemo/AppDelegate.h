@@ -1,29 +1,4 @@
-iOS_R.strings
-=============
-
-仿Android中R.strings.key的写法，方便Android和iOS开发公用一套strings资源文件.
-
-#Example
-    - (void)testStrXml
-    {
-        // 初始化R
-        R *r = [R sharedInstance];
-        [r loadXmlByFileName:@"stirngs_simplified"];
-        
-        // 根据key获取对应string
-        NSString *key = @"app_name";
-        NSLog(@"R.strings.%@: %@", key, R_Strings_Key(key));
-        key = @"tip";
-        NSLog(@"R.strings.%@: %@", key, R_Strings_Key(key));
-        key = @"hello";
-        NSLog(@"R.strings.%@: %@", key, R_Strings_Key(key));
-        key = @"bye";
-        NSLog(@"R.strings.%@: %@\n\n", key, R_Strings_Key(key));
-
-    }
-
-
-#License
+/*
  The MIT License (MIT)
  
  Copyright (c) 2013 SuXinDe (Email: suxinde2009@126.com)
@@ -43,3 +18,14 @@ iOS_R.strings
  LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
  THE SOFTWARE.
+ */
+
+#import <UIKit/UIKit.h>
+
+@interface AppDelegate : UIResponder <UIApplicationDelegate>
+
+@property (strong, nonatomic) UIWindow *window;
+
+
+@end
+

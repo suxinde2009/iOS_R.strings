@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">R.Strings.Demo</string>
+    <string name="tip">提示</string>
+    <string name="hello">你好</string>
+    <string name="bye">再见</string>
+</resources>
